@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="web.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="web.js"> </script>
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <title>Tamer Aly Web Profile</title>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <div class="col-sm  navbar-brand"  >
+          <strong style="font-style: normal;
+  font-family: serif;
+  color: #08526d;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px #000066;
+"> Tamer</strong><strong style="font-style: normal; font-family: serif;
+  font-weight: bold;
+  color: #ec1c23;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px #08526d;
+  font-style: initial; "> Aly </strong>
+          <a class="fa fa-envelope-o" aria-hidden="true" href="mailto:tom.aly@hotmail.com&subject=New%20IQURY">
+            tom.aly@hotmail.com</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a  href="#" id="link" >CONTACT</a></li>
+          <li class="dropdown" style="font-size: 1.2rem; text-shadow: 1px 1px 2px #000066;">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://react-project-tamer-aly.netlify.com/" target="_blank">card-page (bulid with REACT)</a></li>
+              <li><a href="#">Coming Soon</a></li>
+              <li><a href="#">Coming Soon</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+              <!--Slider Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!--slider Text -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/001.jpg" alt="Tomy" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Lets Work Togther</h3>
+          <p>let's dive into the world of coding to design you stunning website.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/002.jpg" alt="Tomy" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>To Bulid</h3>
+          <p>let's dive into the world of coding to design you stunning website.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/003.jpg" alt="Tomy" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Your stunning website</h3>
+          <p>let's dive into the world of coding to design you stunning website.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider controls Left and right  -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+         <!-- Container About Tomy  -->
+  <div id="about" class="container text-center">
+    <h3>About Me</h3>
+    <p id="whoIAm" ></p>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Beautiful Design</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+            <i class="fa fa-4x fa-paint-brush" class="img-circle shape" alt="Beautiful Design" width="255" height="255"></i>
+        </a>
+        <div id="demo" class="collapse">
+          <h5>All the websites</h5>
+          <h5>beautiful,unique and tailored</h5>
+          <h5>to suit your needs and requirements.</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Clean Code</strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+            <i class="fa fa-4x fa-code"  class="img-circle shape" alt="Clean Code" width="255" height="255"></i>
+        </a>
+        <div id="demo2" class="collapse">
+          <h5>All the websites </h5>
+          <h5>will be written in the latest</h5>
+          <h5>
+            HTML5 / CSS3 &amp; JavaScript (jQuery) and React</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Always Responsive</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <i class="fa fa-4x fa-tablet" class="img-circle shape" alt="Always Responsive" width="255" height="255"> </i>
+        </a>
+        <div id="demo3" class="collapse">
+          <h5>All the websites</h5>
+          <h5>are responsive. to look beautiful</h5>
+          <h5>on desktop, tablets and mobile phones</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+         <!-- Container (The Blog) -->
+  <div id="blog" class="bg-1">
+    <div class="container">
+      <h3 class="text-center">Tamer Aly</h3>
+    <p class="text-center" style="color: #bdbdbd;"><strong> Travel  </strong><br>An insider's guide to the wonders of Egypt</p>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="thumbnail"  >
+            <img src="img/006.jpeg" alt="Egypt" width="400" height="300">
+            <p><strong>Aswan</strong></p>
+            <p>A city in Egypt on the Nile River.</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal1">Read more</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="img/004.jpeg" alt="Egypt" width="400" height="300">
+            <p><strong>Sunset in Egypt</strong></p>
+            <p>A general view of Cairo before sunset</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal2">Read more</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="img/007.jpg" alt="Egypt" width="400" height="300">
+            <p><strong>Tutankhamun</strong></p>
+            <p>One of the many treasures of Tutankhamun</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal3">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+              <!-- Modal [0] -->
+    <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4>Aswan</h4>
+          </div>
+          <p class="modal-body">                                      Aswan, a city on the Nile River, has been southern Egypt’s strategic and commercial gateway since antiquity. It contains significant archaeological sites like the Philae temple complex, on Agilkia Island near the landmark Aswan Dam. Philae’s ruins include the columned Temple of Isis, dating to the 4th century B.C. Downriver, Elephantine Island holds the Temple of Khnum, from the Third Dynasty.                                               
+          </p>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Close
+            </button>
+            <p>Read <a href="https://www.google.co.uk/destination?q=aswan%20city%20in%20Egypt%20on%20the%20Nile%20River.&sa=X&site=search&output=search&dest_mid=%2Fm%2F0_38&tcfs#dest_mid=/m/0_38&tcfs=EhoaGAoKMjAxOS0wMS0yORIKMjAxOS0wMi0wMg" target="_blank" >more..</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+  <!-- Modal [1] -->
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+         <h4>Sunset in Egypt</h4>
+          </div>
+          <p class="modal-body">                                      The phenomenon of sunsets has been admired by artists, contemplated by philosophers and examined by scientists. While the sun sets every day, everywhere, Egypt has a rich variety of nature, historical and architecture scenery that provides for a kaleidoscopic sunset experience.                                            
+          </p>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Close
+            </button>
+            <p>Read <a href="http://www.egypttoday.com/Article/9/7116/In-pics-No-better-place-to-watch-sunset-than-Egypt" target="_blank">more..</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal [2] -->
+    <div class="modal fade" id="myModal3" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+             <h4>Tutankhamun</h4>
+          </div>
+          <p class="modal-body">                                     Tutankhamun was an Egyptian pharaoh of the 18th dynasty, during the period of Egyptian history known as the New Kingdom or sometimes the New Empire Period. He has, since the discovery of his intact tomb, been referred to colloquially as King Tut </p>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Close
+            </button>
+            <p>Read <a href="https://www.ancient.eu/Tutankhamun/" target="_blank">more..</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Tomy Values) -->
+  <div id="Values" class="container">
+
+    <br>
+    <h3 class="text-center">My Values</h3>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Clients First</a></li>
+      <li><a data-toggle="tab" href="#menu1">Success</a></li>
+      <li><a data-toggle="tab" href="#menu2">Creative</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h2>Human centered</h2>
+        <p>Certainly this applies to all my clients, but this is an overall value of mine,
+          I always put peoples needs at the heart of all my decision making.
+        
+       </p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h2>Encourage Success</h2>
+        <p>Listen and act with honesty when I work for you and ensure I strive to deliver the best service.</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h2>To Be Creative</h2>
+        <p> I appreciate people having faith in me,and for that, I will use my skills, talent, education and circumstances to make you different and stunning website.</p>
+      </div>
+    </div>
+  </div>
+
+                    <!-- footer -->
+  <footer class="text-center ">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <a href="https://www.facebook.com/tamer.aly.9081" target="_blank" class="fa fa-facebook-official w3-hover-opacity"> </a>
+    <a href="https://twitter.com/mr_tamer" target="_blank" class="fa fa-twitter w3-hover-opacity"> </a>
+    
+    <a href="https://www.linkedin.com/in/tamer-aly-b093b591/" target="_blank" class="fa fa-linkedin w3-hover-opacity"> </a><br>
+    <small> <b>&copy; Powered by  Tamer Aly </b></small>
+    
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+             if (this.hash !== "") {
+                 event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+            window.location.hash = hash;
+          });
+        } 
+      });
+    })
+  </script>
+  <script type="text/babel">
+  		function AboutTomy() {
+  			return(<div>
+  	<p>My name is<strong className= "aboutTomyName"> {name} </strong> and I am a
+  		 Web Developer & Designer based in Manchester. 
+  		 I love crafting beautiful web pages with HTML5, CSS3 , JavaScript , jQuery and React.
+  		I originally started coding and design as a hobby.
+  		Over the last year, I have been studying web development skills in order to make me a better designer 
+  		and of course, my design background has made me a better developer.<br/>
+  Also, my previous employment and management experience provide me with leadership skills that allow me to effectively communicate with others to achieve our goals. 
+  <br/>In addition, it has provided me with the knowledge of understanding and communicating with customers to satisfy their needs.
+  <br/>
+  		<i>I always :</i><br/>
+  Meet customers needs and provide the best user experience..<br/>
+  Getting the job done no matter what the circumstances are, is my aim.
+   You can grab my CV <a href="https://www.dropbox.com/s/y6qg64o5k3mxryv/Tamer-Aly%20CV.rtf?dl=0" target="_blank"><strong>FROM HERE</strong></a>. If you want to hire me or just to talk <a href="#">CONTACT ME</a></p>
+  				</div>);
+  			
+  		}
+  		const name = "Tamer Aly";
+  		
+  		ReactDOM.render(<AboutTomy/>, document.getElementById("whoIAm"));
+      </script>
+      
+
+</body>
+
+</html>
