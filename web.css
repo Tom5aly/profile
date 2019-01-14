@@ -13,6 +13,11 @@ h4 {
 .container {
   padding: 80px 120px;
 }
+@media only screen and (max-width: 488px) {
+  #email {
+    display: none;
+  }
+}
 .shape {
   border: 10px solid transparent;
   margin-bottom: 25px;
