@@ -13,7 +13,7 @@ h4 {
 .container {
   padding: 80px 120px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 548px) {
   #email {
     display: none;
   }
