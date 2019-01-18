@@ -20,7 +20,7 @@ $(document).on("click", "#link", function(e) {
 
 $(document).ready( function(){
     $("#tomy").click(function(e){
-        $("#jq").toggle(5000);
+        $("#jq").toggle(9500);
     });
 });
 
